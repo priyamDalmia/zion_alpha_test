@@ -1,4 +1,5 @@
 # .gitignore
+.venv/
 build/
 my_project
 *.o
