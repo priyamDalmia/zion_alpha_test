@@ -48,3 +48,10 @@ make
 ```
 ### Design Considerations 
 
+Designing a low latency notificaiton system. 
+
+1. Rate limits for APIs. 
+   1. Additionally I could have - separate CURL* handles per thread or wrap shared ones with std::mutex.
+
+2. Send notifications on a separate thread or coroutine to avoid blocking main logic.
+   1. Additionally I could have - Worker threads pull from the queue and send notifications.
