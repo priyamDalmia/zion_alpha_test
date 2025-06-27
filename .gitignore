@@ -1,0 +1,6 @@
+# .gitignore
+build/
+my_project
+*.o
+*.swp
+config.ini
